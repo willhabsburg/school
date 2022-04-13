@@ -1,0 +1,119 @@
+/* Author: William Habsburg 000869622 */
+
+body {
+	margin: 0em 3em 5em 3em;
+}
+
+header {
+	text-align: center;
+}
+
+.double_underline {
+	text-decoration: underline;
+	text-decoration-style: double;
+	font-style: italic;
+}
+
+h1, h2, h4, #recycle_title, nav {
+	color: #14ab3f;
+}
+
+/* Navigation styles */
+
+nav {
+	background-color: #fbefb3;
+}
+
+nav ul {
+	padding: 0px;
+	margin: 0px;
+
+}
+
+nav ul li {
+	display: inline;
+	padding-right: 50px;
+}
+
+nav ul li a:hover {
+	color: #ec834a;
+	text-decoration: underline;
+}
+
+nav ul li a:active {
+	color: black;
+	text-decoration: underline;
+}
+
+nav ul li a {
+	text-decoration: none;
+}
+
+/* Grid Area */
+
+#recycle_grid {
+	display: grid;
+	grid-template-columns: 60% 40%;
+	grid-template-areas:"hours    aside"
+						"whatgoes aside";
+	grid-column-gap: 15px;
+}
+
+#recycle_grid > #hours {
+	grid-area: hours;
+}
+
+#recycle_grid > aside {
+	grid-area: aside;
+}
+
+#recycle_grid > #what_goes {
+	grid-area: whatgoes;
+}
+
+/* Various List Styles */
+
+#hours ul li {
+	list-style-type: circle;
+}
+
+li.nobullet {
+	list-style-type: none !important;
+}
+
+#goes_in_last {
+	list-style-image: url("images/greenarrow.png") !important;
+}
+
+#goes_in ul li {
+	line-height: 2.5em;
+	list-style-image: url("images/recycle_sm.jpg");
+}
+
+#recycle_tips ul li ol li {
+	list-style-type: lower-roman;
+}
+
+/* Various other styles */
+
+#recycle_title, #recycle_title img {
+	font-size: 3em;
+	vertical-align: middle;
+}
+
+#pick_up {
+	color: #b8860b;
+}
+
+#how_to_compost {
+	color: white;
+	background-color: royalblue;
+	text-decoration: none;
+}
+
+/* Footer Styles */
+
+footer {
+	background-image: url("images/ricepaper.png");
+	text-align: center;
+}

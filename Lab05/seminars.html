@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- 
+			Name: 			Willaim Habsburg
+			Student Number:	000869622
+			Date:			2021-11-30
+			Description:	Lab 5
+		-->
+		
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<title>Outdoor Adventure Seminars</title>
+		
+		<link rel="stylesheet" href="adventurestyles.css">
+		<link rel="stylesheet" href="mobile.css">
+		<link rel="stylesheet" href="printstyles.css">
+		
+		<style>
+			.purpleTable {
+				background-color: #9262AF;
+			}
+			
+			.blueTable {
+				background-color: #00A5D6;
+			}
+			
+			.greenTable {
+				background-color: #99EE8A;
+			}
+			
+			.yellowTable {
+				background-color: #F9F871;
+			}
+			
+			.dustTable {
+				background: url("images/dust.jpg");
+			}
+			
+			.smallColor {
+				width: 10px;
+			}
+			
+			main {
+				margin-left: auto;
+				margin-right: auto;
+				width: 70%;
+			}
+			
+			#legendTable caption {
+				text-align: left;
+			}
+			
+			#legendTable {
+				margin: 20px 0px;
+			}
+			
+			#mainTable {
+				border-collapse: collapse;
+			}
+			
+			#mainTable caption {
+				text-align: right;
+				caption-side: bottom;
+			}
+			
+			#mainTable>thead>tr>th {
+				background-color: #002759;
+				color: white;
+			}
+			
+			#mainTable>tbody>tr>th {
+				background-color: #DDEEFF;
+			}
+			
+			#mainTable tr {
+				height: 40px;
+			}
+			
+			#mainTable th, #mainTable td {
+				padding: 5px;
+				border: 1px solid black;
+				width: 12.5%;
+				font-size: .9em;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>Outdoor Adventure Seminars<h1>
+			<h1>2020 / 2021</h1>
+		</header>
+		
+		<nav>
+			<ul>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Travel</a></li>
+				<li><a href="#">Photos</a></li>
+				<li><a href="#">Shop</a></li>
+				<li><a href="reviews.html">Reviews</a></li>
+				<li><a href="#">Seminars</a></li>
+				<li><a href="#">Events</a></li>
+			</ul>
+		</nav>
+		
+		<main>
+			<table id="legendTable">
+				<caption>Legend:</caption>
+				<colgroup>
+					<col id="firstCol">
+					<col class="dataCol" span=7>
+				</colgroup>
+				<tr>
+					<td class="smallColor purpleTable">&nbsp;</td>
+					<td>Beginner Cycling</td>
+					<td class="smallColor blueTable">&nbsp;</td>
+					<td>Long Distance Cycling</td>
+					<td class="smallColor greenTable">&nbsp;</td>
+					<td>Hiking</td>
+					<td class="smallColor yellowTable">&nbsp;</td>
+					<td>Camping</td>
+				</tr>
+			</table>
+		
+			<table id="mainTable">
+				<caption>Schedule is subject to change</caption>
+				<thead>
+					<tr>
+						<th>Day</th>
+						<th>7 am - 9 am</th>
+						<th>9 am - 11 am</th>
+						<th>11 am - 12 pm</th>
+						<th>12 pm - 2 pm</th>
+						<th>2 pm - 4 pm</th>
+						<th>6 pm - 8 pm</th>
+						<th>8 pm - 10 pm</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>Monday</th>
+						<td colspan=7 class="dustTable">Reserved for groups</td>
+					</tr>
+					<tr>
+						<th>Tuesday</th>
+						<td class="greenTable">Hiking</td>
+						<td class="purpleTable">Beginner Cycling</td>
+						<td colspan=5 class="yellowTable">Camping</td>
+					</tr>
+					<tr>
+						<th>Wednesday</th>
+						<td rowspan=2 class="blueTable">Long Distance Cycling Part 1</td>
+						<td>&nbsp;</td>
+						<td class="purpleTable">Beginner Cycling</td>
+						<td rowspan=2 class="yellowTable">Camping in Asia</td>
+						<td colspan=2 rowspan=3 class="greenTable">Hiking</td>
+						<td rowspan=2 class="blueTable">Long Distance Cycling Part 2</td>
+					</tr>
+					<tr>
+						<th>Thursady</th>
+						<td class="yellowTable">Camping</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<th>Friday</th>
+						<td rowspan=4 class="yellowTable">Camping in Europe</td>
+						<td colspan=2 class="purpleTable">Beginner Cycling</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<th>Saturday</th>
+						<td rowspan=2 colspan=3 class="greenTable">Hiking</td>
+						<td class="purpleTable">Beginner Cycling</td>
+						<td rowspan=2 colspan=2 class="blueTable">Long Distance Cycling Part 1 and 2</td>
+					</tr>
+					<tr>
+						<th>Sunday</th>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<th>Holidays</th>
+						<td colspan=2 class="blueTable">Long Distance Cycling</td>
+						<td colspan=4 class="dustTable">No Seminars</td>
+					</tr>
+				</tbody>
+			</table>
+		</main>
+
+		<footer>
+			<img src="images/outdooradventurehorizontal.png" alt="Logo">
+		</footer>
+	</body>
+</html>

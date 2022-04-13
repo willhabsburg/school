@@ -1,0 +1,44 @@
+/*
+Name: 			Willaim Habsburg
+Student Number:	000869622
+Date:			2021-11-30
+Description:	Lab 5
+*/
+
+/* =============================================
+   Print Styles
+   =============================================
+*/
+
+@media only print {
+	/* All pages */
+	nav, footer {
+		display: none;
+	}
+			
+	h1 {
+		font-size: 1em !important;
+	}
+
+	body {
+		color: black !important;
+		background-color: white !important;
+	}
+	
+	/* Seminars page */
+	
+	table th, table td {
+		border: none !important;
+	}
+	
+	table caption {
+		text-align: center !important;
+		caption-side: top !important;
+	}
+	
+	/* Reviews page */
+	
+	main, main input, main select, main textarea, .formButton {
+		font-size: .8em !important;
+	}
+}

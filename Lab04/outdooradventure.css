@@ -1,0 +1,155 @@
+/* outdooradventure.css
+	William Habsburg 000869622
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: arial;
+}
+
+/* Header styles */
+
+a.socialLink {
+	text-decoration: none;
+}
+
+a.socialLink img {
+	vertical-align: middle;
+}
+
+.headerButton {
+	border: 1px solid #0172BA;
+	border-radius: 20px;
+	height: 40px;
+	background-color: #0172BA;
+	color: white;
+	text-decoration: none;
+	padding: 5px;
+}
+
+header {
+	display: grid;
+	grid-template-areas:"leftHead  centerHead rightHead";
+	grid-column-gap: 15px;
+}
+
+header > section#social {
+	grid-area: leftHead;
+	text-align: left;
+	margin: 90px 0px 90px 0px;
+}
+
+header > #mainlogo {
+	grid-area: centerHead;
+	text-align: center;
+}
+
+header > #sublogin {
+	grid-area: rightHead;
+	text-align: right;
+	margin: 90px 0px 90px 0px;
+}
+
+header > #sublogin a:hover {
+	border: 1px solid #089247;
+	background-color: #089247;
+}
+
+/* Nav Section */
+
+nav {
+	text-align: center;
+	width: 100%;
+	border-top: solid 1px #0172BA;
+	border-bottom: solid 1px #0172BA;
+	padding: 20px 0px 20px 0px;
+	background-color: white;
+}
+
+nav .navButton {
+	margin: 0px 10px;
+	border: 2px solid #0172BA;
+	border-radius: 20px;
+	height: 40px;
+	color: #0172BA;
+	text-decoration: none;
+	padding: 5px 20px;
+}
+
+nav ul {
+	list-style: none;
+}
+
+nav ul li {
+	display: inline;
+}
+
+.sticky {
+	position: sticky;
+	top: 0;
+}
+
+nav ul li a:hover {
+	background-color: #003557;
+}
+
+
+/* footer */
+
+footer {
+	display: grid;
+	grid-template-columns: 245px 1fr 1fr 1fr 1fr;
+	grid-template-areas:"logo about review seminar shop"
+						"logo photo travel event shop";
+	grid-column-gap: 15px;
+	grid-row-gap: 15px;
+	width: 100%;
+	border-top: 1px solid #0172BA; 
+	border-bottom: 1px solid #0172BA;
+	margin-bottom: 2em;
+}
+
+footer img#logo {
+	grid-area: logo;
+}
+
+footer section#about {
+	grid-area: about;
+}
+
+footer section#review {
+	grid-area: review;
+}
+
+footer section#seminar {
+	grid-area: seminar;
+}
+
+footer section#shop {
+	grid-area: shop;
+}
+
+footer section#photo {
+	grid-area: photo;
+}
+
+footer section#travel {
+	grid-area: travel;
+}
+
+footer section#event {
+	grid-area: event;
+}
+
+footer section p.footTitle {
+	font-weight: bold;
+	width: 100%;
+	border-bottom: 1px solid #0172BA;
+}
+
+
+

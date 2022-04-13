@@ -1,0 +1,75 @@
+/*
+Name: 			Willaim Habsburg
+Student Number:	000869622
+Date:			2021-12-02
+Description:	Lab 6
+*/
+
+/* Vertical Layout */
+@media only screen and (max-width: 600px) {
+	#imageMap {
+		display: none;
+	}
+	
+	nav {
+		width: 150px;
+		margin: 10px auto;
+	}
+	
+	nav ul {
+		list-style: none;
+	}
+	
+	nav ul .separator {
+		display: none;
+	}
+}
+
+/* Horizontal Layout */
+@media only screen and (min-width: 601px) {
+	#imageMap, nav {
+		width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	nav ul li {
+		display: inline;
+	}
+	
+	main.mainPage {
+		display: grid;
+		grid-template-columns: 5fr 6fr 8fr;
+		grid-template-areas:"location services welcome"
+							"location services survey"
+							"gallery  gallery  gallery";
+		grid-gap:15px;
+	}
+	
+	div#location {
+		grid-area: location;
+	}
+	
+	div#services {
+		grid-area: services;
+	}
+	
+	div#welcome {
+		grid-area: welcome;
+	}
+	
+	div#survey {
+		grid-area: survey;
+	}
+	
+	div#gallery {
+		grid-area: gallery;
+		display: flex;
+		flex-flow:row wrap;
+	}
+	
+	#gallery div {
+		flex:0 0 200px;
+		margin: 15px;
+	}
+}

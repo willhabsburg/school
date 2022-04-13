@@ -1,0 +1,79 @@
+<!doctype html>
+
+<!-- 	William Habsburg 000869622 
+		Assignment 5
+        SVG helicopter game
+        Help with SVG path from https://vanseodesign.com/web-design/svg-paths-curve-commands/
+        Help with SVG line animation from https://css-tricks.com/a-trick-that-makes-drawing-svg-lines-way-easier/
+        SVG path builder: https://mavo.io/demos/svgpath/
+
+-->
+
+<html lang="en">
+
+<head>
+    <title>Assignment 5</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+        crossorigin="anonymous">
+	<link rel="stylesheet" href="css.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/a5.js"></script>
+</head>
+
+<body>
+    <header class="container-lg bg-primary text-white pt-0">
+        <div class="row">
+            <div class="col-2 pt-0 dice headerText">
+                <svg width="140" height="140" id="logo">
+                    <circle cx="70" cy="70" r="70" stroke="white" fill="white"></circle>
+                    <path id="textPath" fill="none" d="M21,119  A70,70 0 0,0 140,70" />
+                    <text>
+                        <textPath href="#textPath" stroke="black" stroke-width="1">Helicopter Game</textPath>
+                    </text>
+                    <line class="rotor" x1=70 y1=35 x2=120 y2=35 pathLength=1 />
+                    <line class="rotor" x1=70 y1=35 x2=20 y2=35 pathLength=1 />
+                    <path class="copter" d="m 70 35 v 5 h -26 l -14 7 v 12 l 10 6 h 37 h -24 v 8 h -16 l -10 -4 l 10 4 h 63 h -23 v -8 h 10 v -10 h 30 v -18 l -15 14 h -15 l -17 -16" />
+                </svg>
+            </div>  
+            <div class="col-8 text-center">
+                <h1>Will's SVG Assignment!</h1>
+                <h3>William Habsburg Assignment 5 COMP 10259</h3>
+                <h3>000869622</h3>
+            </div>
+        </div>
+    </header>
+    <nav class="container-lg">
+        <button type="button" class="btn btn-primary mt-3 mb-3" data-bs-toggle="collapse" data-bs-target="#rules">Click here 
+            to show the rules</button>&nbsp;&nbsp;
+            <button type="button" id="startGame" class="btn btn-primary mt-3 mb-3">Start game!</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;<h3 class="text-primary" id="highscore"></h3>
+        <section id="rules" class="collapse">
+            <h3>Will's Helicopter Game Rules</h3>
+            <p>You are flying through a path.  You must avoid the walls to score points.
+                The harder the path is (the narrower the gap to fly through and the faster the game gets) the more points you get.</p>
+            <p>The game lasts 3 minutes.  Try to get the high score!</p>
+            <p>To control the helicopter, use the mouse in the black area of the screen.  Move the mouse up and down to move the helicopter.</p>
+            <p>Hide these rules while you play the game...</p>
+        </section>
+    </nav>
+    
+    <section id="game" class="container-lg">
+        <h3 class="text-primary">Score: <span id="score">0</span> points.  Time left: <span id="timeLeft">0:00</span></h3>
+        <svg width="100" height="40" id="helicopter">                    
+            <line class="rotor" x1=50 y1=0 x2=100 y2=0 pathLength=1 />
+            <line class="rotor" x1=50 y1=0 x2=0 y2=0 pathLength=1 />
+            <path class="copter" d="m 50 1 v 5 h 26 l 14 7 v 12 l -10 6 h -37 h 24 v 8 h 16 l 10 -4 l -10 4 h -63 h 23 v -8 h -10 v -10 h -30 v -18 l 15 14 h 15 l 17 -16" />
+        </svg>
+        <svg width="800" height="800" id="background">
+            <rect height="800" width="800" x="0" y="0" />
+        </svg>
+    </section>
+    <footer class="container-lg bg-primary text-white">
+        <p>&copy; 2022, William Habsburg, Mohawk College</p>
+    </footer>
+</body>
+
+</html>

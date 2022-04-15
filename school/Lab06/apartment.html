@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- 
+			Name: 			Willaim Habsburg
+			Student Number:	000869622
+			Date:			2021-12-02
+			Description:	Lab 6
+		-->
+		
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<title>Sandy and Leslie's Apartment</title>
+		
+		<link rel="stylesheet" href="apartment_layout.css">
+		<link rel="stylesheet" href="mobile.css">
+		
+	</head>
+	
+	<body>
+		<header>
+			<h1>Sandy and Leslie's Apartment</h1>
+		</header>
+		<section id="imageMap">
+			<p>Click a room for a detailed view.</p>
+			<img src="images/apartmentfloorplan.jpg" alt="Floor Plan" usemap="#floorPlan">
+			<map name="floorPlan">
+				<area shape="poly" coords="58,8,205,8,201,117,160,154,43,153" href="bedroom1.html" alt="Bedroom 1">
+				<area shape="rect" coords="407,272,589,461" href="bedroom2.html" alt="Bedroom 2">
+				<area shape="poly" coords="212,9,402,9,392,129,338,177,221,160" href="livingroom.html" alt="Living Room">
+				<area shape="circle" coords="476,222,65" href="diningroom.html" alt="Dining Room">
+				<area shape="rect" coords="225,243,409,300" href="kitchen.html" alt="Kitchen">
+			</map>
+		</section>
+		<nav>
+			<ul>
+				<li><a href="apartment.html">Apartment</a></li>
+				<li class="separator">|</li>
+				<li><a href="bedroom1.html">Bedroom 1</a></li>
+				<li class="separator">|</li>
+				<li><a href="bedroom2.html">Bedroom 2</a></li>
+				<li class="separator">|</li>
+				<li><a href="diningroom.html">Dining Room</a></li>
+				<li class="separator">|</li>
+				<li><a href="kitchen.html">Kitchen</a></li>
+				<li class="separator">|</li>
+				<li><a href="livingroom.html">Living Room</a></li>
+			</ul>
+		</nav>
+		
+		<main class="mainPage">
+			<div id="location">
+				<h2>Location</h2>
+				<img src="images/location.png" alt="Map of Location">
+			</div>
+			<div id="services">
+				<h2>Apartment Services</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Service</th>
+							<th>Day/Hours</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Gym</td>
+							<td rowspan="2">
+								Monday-Friday 6am - 10pm<br>
+								Saturday 8am - 8pm<br>
+								Sunday 8am - 5pm
+							</td>
+						</tr>
+						<tr>
+							<td>Pool</td>
+						</tr>
+						<tr>
+							<td>Laundry</td>
+							<td>24/7</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<td colspan="2">Please do not allow people you do not know to use these facilities</td>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+			<div id="welcome">
+				<h2>Welcome Message</h2>
+				<audio controls>
+					<source src="media/apartment.mp3" type="audio/mpeg">
+					Audio is not supported in your browser
+				</audio>
+				<p>Transcript: Hello.  Welcome to our apartment. You'll really enjoy living here. The rooms are spacious and the apartment building amenities are fantastic. We look forward to hearing form you!</p>
+			</div>
+			<div id="survey">
+				<h2>Survey</h2>
+				<p>How did you dind out about this apartment?  Check all that apply:
+				<form method="post" action="https://csunix.mohawkcollege.ca/tooltime/showit.pl">
+					<input type="hidden" name="formname" value="Donation Form">
+					<input type="checkbox" id="websearch" name="WebSearch" class="checkbox" value="WebSearch">
+					<label for="websearch">Web Search</label>
+					<input type="checkbox" id="friend" name="Friend" class="checkbox" value="Friend">
+					<label for="friend">Friend</label>
+					<input type="checkbox" id="newspaper" name="Newspaper" class="checkbox" value="Newspaper">
+					<label for="newspaper">Newspaper</label><br>
+					<input type="submit" value="Submit">
+					<input type="reset" value="Reset Form">
+				</form>
+			</div>
+			<div id="gallery">
+				<h2>Gallery</h2>
+				<div>
+					<h3>Balcony</h3>
+					<img src="thumbnails/balcony_sm.jpg" alt="">
+				</div>
+				<div>
+					<h3>Bathroom</h3>
+					<img src="thumbnails/bathroom_sm.jpg" alt="">
+				</div>
+				<div>
+					<h3>Bedroom</h3>
+					<img src="thumbnails/bedroom_sm.jpg" alt="">
+				</div>
+				<div>
+					<h3>Dining Room</h3>
+					<img src="thumbnails/diningroom_sm.jpg" alt="">
+				</div>
+				<div>
+					<h3>Kitchen</h3>
+					<img src="thumbnails/kitchen_sm.jpg" alt="">
+				</div>
+				<div>
+					<h3>Living Room</h3>
+					<img src="thumbnails/livingroom_sm.jpg" alt="">
+				</div>
+			</div>
+		</main>
+		
+		<footer class="mainFooter">
+			<p>For more information contact:
+			<a href="mailto:SandyAndLeslie@example.com">SandyAndLeslie@example.com</a> or
+			<a href="tel:9055551234">(905) 555-1234</a></p>
+			<p>&copy; Sandy and Leslie 2020</p>
+		</footer>
+		
+	</body>
+	
+</html>

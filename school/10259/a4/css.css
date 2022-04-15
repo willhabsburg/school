@@ -1,0 +1,32 @@
+/* William Habsburg
+   000869622
+   Assignment 4 CSS file
+   This is a Dice game played against the computer
+*/
+
+* {
+ margin:0;
+ border:0;
+ padding:0;
+ text-decoration:none;
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: Dice;
+    /* Dice font downloaded from https://www.dafont.com/dice-2.font It is free for personal use */
+    src: url("fonts/Dice.ttf");
+}
+  
+.dice {
+    font-family: Dice;
+    font-size: 48pt;
+}
+
+.headerText {
+    font-size: 48pt;
+}
+
+#game {
+    display: none;
+}

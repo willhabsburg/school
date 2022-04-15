@@ -5,11 +5,21 @@
     <link>./blog/</link>
     <description>Recent content in Blogs on Welcome to William</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="./blog/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Fri, 15 Apr 2022 08:39:12 -0400</lastBuildDate><atom:link href="./blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Upgrading Python in Kubuntu</title>
+      <link>./blog/upgrading-python-in-ubuntu/</link>
+      <pubDate>Fri, 15 Apr 2022 08:39:12 -0400</pubDate>
+      
+      <guid>./blog/upgrading-python-in-ubuntu/</guid>
+      <description>Upgrading Python in Kubuntu I&amp;rsquo;m taking an Intermediate Python course this summer. I thought I would get ahead of the game and ensure my python installation was the lastest version.</description>
+    </item>
+    
     <item>
       <title>Welcome to Will&#39;s place</title>
       <link>./blog/first-post/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 14 Apr 2022 12:45:12 -0400</pubDate>
       
       <guid>./blog/first-post/</guid>
       <description>Welcome to Will&amp;rsquo;s place Here, you will find my thoughts on Linux and programming. I hope you will find it interesting.</description>

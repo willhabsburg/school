@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authors on Welcome to William</title>
+    <link>https://www.willhabsburg.com/author/</link>
+    <description>Recent content in Authors on Welcome to William</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://www.willhabsburg.com/author/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Will Habsburg</title>
+      <link>https://www.willhabsburg.com/author/will-habsburg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.willhabsburg.com/author/will-habsburg/</guid>
+      <description>I am a student at Mohawk College in Hamilton, Ontario.
+I decided to go back to school to become a software developer after working in IT for 30 years.</description>
+    </item>
+    
+  </channel>
+</rss>
